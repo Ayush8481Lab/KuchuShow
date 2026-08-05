@@ -1,0 +1,600 @@
+  <channel id="143">
+    <display-name>CNBC TV18 Prime</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/CNBCTV18Prime.png" />
+  </channel>
+  <channel id="144">
+    <display-name>Colors HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ColorsHD.png" />
+  </channel>
+  <channel id="146">
+    <display-name>History TV18 HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/History_HD.png" />
+  </channel>
+  <channel id="151">
+    <display-name>Movies Now HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Movies_Now_HD.png" />
+  </channel>
+  <channel id="153">
+    <display-name>Zee Talkies</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeTalkies.png" />
+  </channel>
+  <channel id="156">
+    <display-name>Star Gold HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Gold_HD.png" />
+  </channel>
+  <channel id="164">
+    <display-name>Travelxp HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Travel_XP_HD.png" />
+  </channel>
+  <channel id="165">
+    <display-name>Zee Cinema HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeCinemaHD.png" />
+  </channel>
+  <channel id="166">
+    <display-name>Cartoon Network Telugu</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/CNTelugu.png" />
+  </channel>
+  <channel id="167">
+    <display-name>Zee TV HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeTVHD.png" />
+  </channel>
+  <channel id="173">
+    <display-name>Aaj Tak</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Aaj_Tak.png" />
+  </channel>
+  <channel id="175">
+    <display-name>Aastha</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Aastha.png" />
+  </channel>
+  <channel id="177">
+    <display-name>ABP News India</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ABP_News_India.png" />
+  </channel>
+  <channel id="180">
+    <display-name>Asianet News</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Asianet_News.png" />
+  </channel>
+  <channel id="182">
+    <display-name>B4U Movies</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/b4u_movies.png" />
+  </channel>
+  <channel id="183">
+    <display-name>B4U Music</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/B4U_Music.png" />
+  </channel>
+  <channel id="185">
+    <display-name>And Pictures HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/AndPicturesHD.png" />
+  </channel>
+  <channel id="190">
+    <display-name>CNBC Awaaz</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/CNBCAwaaz.png" />
+  </channel>
+  <channel id="193">
+    <display-name>CNN</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/CNN.png" />
+  </channel>
+  <channel id="196">
+    <display-name>Colors Gujarati</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ColorsGujarati.png" />
+  </channel>
+  <channel id="202">
+    <display-name>DD National</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/DD_National.png" />
+  </channel>
+  <channel id="203">
+    <display-name>DD News</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/DD_News.png" />
+  </channel>
+  <channel id="204">
+    <display-name>DD Sports</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Sports.png" />
+  </channel>
+  <channel id="212">
+    <display-name>ET Now</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ET_Now.png" />
+  </channel>
+  <channel id="231">
+    <display-name>News 18 India</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/IBN_7.png" />
+  </channel>
+  <channel id="232">
+    <display-name>News18 Marathi</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/News18Lokmat.png" />
+  </channel>
+  <channel id="235">
+    <display-name>India TV</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/India_TV.png" />
+  </channel>
+  <channel id="242">
+    <display-name>Discovery English</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Channel_Eng.png" />
+  </channel>
+  <channel id="248">
+    <display-name>MTV</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/MTV.png" />
+  </channel>
+  <channel id="250">
+    <display-name>Music India</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Music_India.png" />
+  </channel>
+  <channel id="255">
+    <display-name>NDTV 24x7</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/NDTV_24x7.png" />
+  </channel>
+  <channel id="258">
+    <display-name>NDTV India</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/NDTV_India.png" />
+  </channel>
+  <channel id="259">
+    <display-name>NDTV Profit</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/NDTV_Profit.png" />
+  </channel>
+  <channel id="279">
+    <display-name>Colors Rishtey</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ColorsRishtey.png" />
+  </channel>
+  <channel id="286">
+    <display-name>Animal Planet HD English</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/AnimalPlanetHDEng.png" />
+  </channel>
+  <channel id="288">
+    <display-name>Sanskar</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sanskar.png" />
+  </channel>
+  <channel id="290">
+    <display-name>sonic Tamil</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/sonic_Tamil.png" />
+  </channel>
+  <channel id="291">
+    <display-name>SET HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_HD.png" />
+  </channel>
+  <channel id="317">
+    <display-name>Star Jalsha HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Jalsha_HD.png" />
+  </channel>
+  <channel id="336">
+    <display-name>Star Pravah HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Pravah_HD.png" />
+  </channel>
+  <channel id="368">
+    <display-name>Star Vijay HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Vijay_HD.png" />
+  </channel>
+  <channel id="370">
+    <display-name>Suvarna HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Suvarna_HD.png" />
+  </channel>
+  <channel id="383">
+    <display-name>Times NOW</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Times_NOW.png" />
+  </channel>
+  <channel id="400">
+    <display-name>PM e Vidya 01</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/evidya_1.png" />
+  </channel>
+  <channel id="401">
+    <display-name>Swayam Prabha 19</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_19.png" />
+  </channel>
+  <channel id="402">
+    <display-name>PM e Vidya 02</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/evidya_2.png" />
+  </channel>
+  <channel id="403">
+    <display-name>Swayam Prabha 20</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_20.png" />
+  </channel>
+  <channel id="404">
+    <display-name>PM e Vidya 07</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/evidya_7.png" />
+  </channel>
+  <channel id="405">
+    <display-name>PM e Vidya 03</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/evidya_3.png" />
+  </channel>
+  <channel id="406">
+    <display-name>PM e Vidya 04</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/evidya_4.png" />
+  </channel>
+  <channel id="407">
+    <display-name>PM e Vidya 05</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/evidya_5.png" />
+  </channel>
+  <channel id="408">
+    <display-name>PM e Vidya 06</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/evidya_6.png" />
+  </channel>
+  <channel id="409">
+    <display-name>PM e Vidya 08</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/_evidya_8.png" />
+  </channel>
+  <channel id="410">
+    <display-name>PM e Vidya 09</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/evidya_9.png" />
+  </channel>
+  <channel id="411">
+    <display-name>PM e Vidya 10</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/evidya_10.png" />
+  </channel>
+  <channel id="412">
+    <display-name>Wion</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Wion.png" />
+  </channel>
+  <channel id="413">
+    <display-name>Zee Cinemalu</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeCinemalu.png" />
+  </channel>
+  <channel id="414">
+    <display-name>Zee Yuva</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeYuva.png" />
+  </channel>
+  <channel id="415">
+    <display-name>Zee Anmol Cinema</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeAnmolCinema.png" />
+  </channel>
+  <channel id="417">
+    <display-name>J Movies</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/J_Movies.png" />
+  </channel>
+  <channel id="418">
+    <display-name>Jaya Plus</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jaya_Plus.png" />
+  </channel>
+  <channel id="419">
+    <display-name>Jaya TV HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jaya_TV_HD.png" />
+  </channel>
+  <channel id="420">
+    <display-name>Jaya Max</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jaya_Max.png" />
+  </channel>
+  <channel id="429">
+    <display-name>Colors Tamil HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ColorsTamilHD.png" />
+  </channel>
+  <channel id="440">
+    <display-name>9X Jalwa</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/9XJalwa.png" />
+  </channel>
+  <channel id="441">
+    <display-name>9x Jhakaas</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/9xjhakaas.png" />
+  </channel>
+  <channel id="442">
+    <display-name>Zee 24 Taas</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_24_Taas.png" />
+  </channel>
+  <channel id="443">
+    <display-name>Asianet HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Asianet_HD.png" />
+  </channel>
+  <channel id="445">
+    <display-name>Zee Marathi</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeMarathi.png" />
+  </channel>
+  <channel id="457">
+    <display-name>Jalsha Movies HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jalsa_Movies_HD.png" />
+  </channel>
+  <channel id="459">
+    <display-name>Asianet Movies HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Asianet_Movies_HD.png" />
+  </channel>
+  <channel id="463">
+    <display-name>Discovery HD English</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/DiscoveryHDEng.png" />
+  </channel>
+  <channel id="464">
+    <display-name>Zee 24 Ghanta</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/24_Ghanta_TV.png" />
+  </channel>
+  <channel id="465">
+    <display-name>Jaihind tv</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jaihind_tv.png" />
+  </channel>
+  <channel id="466">
+    <display-name>Dharma Sandesh</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Arihant_TV.png" />
+  </channel>
+  <channel id="471">
+    <display-name>Sony SAB HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/SonySAB.png" />
+  </channel>
+  <channel id="154">
+    <display-name>Sony SAB SD</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/Sony_SAB.png" />
+  </channel>
+  <channel id="472">
+    <display-name>And TV HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/AndTVHD.png" />
+  </channel>
+  <channel id="473">
+    <display-name>Anmol TV</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeAnmol.png" />
+  </channel>
+  <channel id="474">
+    <display-name>Sony Pal</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyPAL.png" />
+  </channel>
+  <channel id="476">
+    <display-name>Sony Max HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyMAX.png" />
+  </channel>
+  <channel id="477">
+    <display-name>MN+ HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/MNPLUS.png" />
+  </channel>
+  <channel id="479">
+    <display-name>TLC HD English</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/TLCHDEnglish.png" />
+  </channel>
+  <channel id="482">
+    <display-name>Colors Cineplex</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Cineplex.png" />
+  </channel>
+  <channel id="483">
+    <display-name>Sony MAX2</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyMAX2.png" />
+  </channel>
+  <channel id="484">
+    <display-name>Zee Cinema</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeCinema.png" />
+  </channel>
+  <channel id="487">
+    <display-name>Zee Bollywood</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeBollywood.png" />
+  </channel>
+  <channel id="488">
+    <display-name>Zee Action</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeAction.png" />
+  </channel>
+  <channel id="489">
+    <display-name>CNBC TV18</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/CNBCTV18.png" />
+  </channel>
+  <channel id="490">
+    <display-name>CNBC Bajar</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/CNBCBajar.png" />
+  </channel>
+  <channel id="491">
+    <display-name>Mirror Now</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/MirrorNow.png" />
+  </channel>
+  <channel id="492">
+    <display-name>CNN NEWS18</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/CNNNEWS18.png" />
+  </channel>
+  <channel id="493">
+    <display-name>India Today</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/India_Today.png" />
+  </channel>
+  <channel id="494">
+    <display-name>AL Jazeera</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/AL_Jazeera.png" />
+  </channel>
+  <channel id="495">
+    <display-name>News X</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/News_X.png" />
+  </channel>
+  <channel id="496">
+    <display-name>dw</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/dw.png" />
+  </channel>
+  <channel id="498">
+    <display-name>India news</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/India_news.png" />
+  </channel>
+  <channel id="499">
+    <display-name>News Nation</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/News_Nation.png" />
+  </channel>
+  <channel id="501">
+    <display-name>News 24</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/News_24.png" />
+  </channel>
+  <channel id="502">
+    <display-name>Good News Today</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Tez.png" />
+  </channel>
+  <channel id="503">
+    <display-name>IBC24</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/IBC-24.png" />
+  </channel>
+  <channel id="504">
+    <display-name>Zee News</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_News.png" />
+  </channel>
+  <channel id="510">
+    <display-name>VIP News</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/VIP_News.png" />
+  </channel>
+  <channel id="511">
+    <display-name>Mh One News</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Mh_One_News.png" />
+  </channel>
+  <channel id="512">
+    <display-name>India News UP</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/India_News_UP.png" />
+  </channel>
+  <channel id="513">
+    <display-name>India News Rajasthan</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/India_News_Rajasthan.png" />
+  </channel>
+  <channel id="515">
+    <display-name>India News MP</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/India_News_MP.png" />
+  </channel>
+  <channel id="516">
+    <display-name>India News Haryana</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/India_News_Haryana.png" />
+  </channel>
+  <channel id="517">
+    <display-name>Chardikla Time TV</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Chardikla_Time_TV.png" />
+  </channel>
+  <channel id="518">
+    <display-name>Sudarshan</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sudarshan.png" />
+  </channel>
+  <channel id="519">
+    <display-name>Sadhna News Plus</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sadhna_News_Plus.png" />
+  </channel>
+  <channel id="520">
+    <display-name>Sansad TV HD</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Rajyasabha.png" />
+  </channel>
+  <channel id="522">
+    <display-name>Sansad TV</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Loksabha_TV.png" />
+  </channel>
+  <channel id="527">
+    <display-name>Investigation Discovery Hindi</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/IDHindi.png" />
+  </channel>
+  <channel id="528">
+    <display-name>DD India</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/DD_India.png" />
+  </channel>
+  <channel id="529">
+    <display-name>News18 MP Chhattisgarh</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/News18MPCG.png" />
+  </channel>
+  <channel id="530">
+    <display-name>News18 UP Uttarakhand</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/News18UPUttarakhand.png" />
+  </channel>
+  <channel id="531">
+    <display-name>News18 Rajasthan</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/News18Rajasthan.png" />
+  </channel>
+  <channel id="533">
+    <display-name>Raj Pariwar</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_Pariwar.png" />
+  </channel>
+  <channel id="536">
+    <display-name>DD Madhya Pradesh</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Madhya_Pradesh.png" />
+  </channel>
+  <channel id="538">
+    <display-name>DD Rajasthan (Jaipur)</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Rajasthan_Jaipur.png" />
+  </channel>
+  <channel id="539">
+    <display-name>DD Bihar</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Bihar.png" />
+  </channel>
+  <channel id="540">
+    <display-name>DD Uttar Pradesh</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Uttar_Pradesh.png" />
+  </channel>
+  <channel id="541">
+    <display-name>Discovery Turbo</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Turbo.png" />
+  </channel>
+  <channel id="542">
+    <display-name>Pogo Tamil</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Pogo_Tamil.png" />
+  </channel>
+  <channel id="543">
+    <display-name>Nick Telugu</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_Telugu.png" />
+  </channel>
+  <channel id="544">
+    <display-name>Nick Junior</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_Junior.png" />
+  </channel>
+  <channel id="545">
+    <display-name>Nick Hindi</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_Hindi.png" />
+  </channel>
+  <channel id="546">
+    <display-name>Nick Tamil</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_Tamil.png" />
+  </channel>
+  <channel id="548">
+    <display-name>Nickelodeon Jr.</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Nickelodeon_Jr.png" />
+  </channel>
+  <channel id="550">
+    <display-name>Discovery Kids Tamil</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/DiscoveryKidsTam.png" />
+  </channel>
+  <channel id="554">
+    <display-name>Discovery Kids Hindi</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/DiscoveryKidsHin.png" />
+  </channel>
+  <channel id="555">
+    <display-name>Chintu TV</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Chintu_TV.png" />
+  </channel>
+  <channel id="556">
+    <display-name>Kochu TV</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kochu_TV.png" />
+  </channel>
+  <channel id="557">
+    <display-name>Chutti TV</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Chutti_TV.png" />
+  </channel>
+  <channel id="558">
+    <display-name>Kushi TV</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kushi_TV.png" />
+  </channel>
+  <channel id="559">
+    <display-name>Pogo Hindi</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Pogo_Hindi.png" />
+  </channel>
+  <channel id="560">
+    <display-name>GOOD TiMES</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/NDTV_Good_Times.png" />
+  </channel>
+  <channel id="561">
+    <display-name>Food Food</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Food_Food.png" />
+  </channel>
+  <channel id="562">
+    <display-name>Travelxp HD Hindi</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Travel_XP.png" />
+  </channel>
+  <channel id="563">
+    <display-name>Kaumudy TV</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Kaumudy_TV.png" />
+  </channel>
+  <channel id="566">
+    <display-name>Animal Planet Hindi</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/AnimalPlanetHin.png" />
+  </channel>
+  <channel id="567">
+    <display-name>Animal Planet English</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/AnimalPlanetEng.png" />
+  </channel>
+  <channel id="568">
+    <display-name>Discovery Science English</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/DiscoveryScienceEng.png" />
+  </channel>
+  <channel id="569">
+    <display-name>D Tamil</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Channel_Tamil.png" />
+  </channel>
+  <channel id="571">
+    <display-name>TLC Hindi</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/TLCHindi.png" />
+  </channel>
+  <channel id="572">
+    <display-name>Zee UP UK</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Living_Foodz.png" />
+  </channel>
+  <channel id="573">
+    <display-name>Discovery Bengali</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Channel_Bengali.png" />
+  </channel>
+  <channel id="574">
+    <display-name>TLC English</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/TLCEnglish.png" />
+  </channel>
+  <channel id="575">
+    <display-name>Discovery Hindi</display-name>
+    <icon src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Channel_Hindi.png" />
+  </channel>
