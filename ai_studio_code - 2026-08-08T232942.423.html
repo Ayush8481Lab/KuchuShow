@@ -3,273 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Crucial for bypassing Referrer-based security blocks -->
+    <!-- ABSOLUTELY CRITICAL: Strips the origin to prevent Fancode from blocking the request -->
     <meta name="referrer" content="no-referrer">
-    <title>Universal HLS Player</title>
+    <title>Pro Live Player</title>
     
-    <!-- Load HLS.js library -->
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    
-    <!-- Google Fonts for modern look -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #0b0d11;
-            color: #f1f5f9;
-            font-family: 'Inter', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-        }
+        body { margin: 0; padding: 0; background-color: #0b0d11; color: #f1f5f9; font-family: 'Inter', sans-serif; }
+        .player-container { max-width: 900px; margin: 40px auto; padding: 20px; }
+        .header { text-align: center; margin-bottom: 20px; }
+        .header span { color: #6366f1; }
+        
+        .input-bar { display: flex; gap: 10px; margin-bottom: 20px; }
+        .input-bar input { flex: 1; padding: 14px 18px; border-radius: 8px; border: 1px solid #1e293b; background: #0f172a; color: #fff; font-size: 15px; outline: none; transition: 0.3s; }
+        .input-bar input:focus { border-color: #6366f1; box-shadow: 0 0 10px rgba(99, 102, 241, 0.3); }
+        .input-bar button { padding: 14px 28px; border-radius: 8px; border: none; background: linear-gradient(135deg, #6366f1, #a855f7); color: white; font-weight: bold; font-size: 15px; cursor: pointer; transition: 0.2s; }
+        .input-bar button:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(168, 85, 247, 0.4); }
+        .input-bar button:active { transform: translateY(0); }
 
-        .container {
-            width: 100%;
-            max-width: 900px;
-            margin-top: 40px;
-            padding: 20px;
-            box-sizing: border-box;
-        }
+        .video-wrapper { width: 100%; aspect-ratio: 16/9; background: #000; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.05); position: relative; }
+        video { width: 100%; height: 100%; outline: none; }
 
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .input-group {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .input-group input {
-            flex: 1;
-            padding: 12px 16px;
-            border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            background: rgba(18, 22, 30, 0.8);
-            color: white;
-            font-size: 16px;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-
-        .input-group input:focus {
-            border-color: #6366f1;
-        }
-
-        .input-group button {
-            padding: 12px 24px;
-            border-radius: 8px;
-            border: none;
-            background: linear-gradient(145deg, #6366f1, #a855f7);
-            color: white;
-            font-weight: 600;
-            font-size: 16px;
-            cursor: pointer;
-            transition: opacity 0.2s, transform 0.1s;
-        }
-
-        .input-group button:hover {
-            opacity: 0.9;
-        }
-
-        .input-group button:active {
-            transform: scale(0.96);
-        }
-
-        .video-wrapper {
-            width: 100%;
-            aspect-ratio: 16 / 9;
-            background-color: #000;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            margin-bottom: 15px;
-        }
-
-        video {
-            width: 100%;
-            height: 100%;
-            outline: none;
-        }
-
-        .controls-panel {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(18, 22, 30, 0.8);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 12px 20px;
-            border-radius: 12px;
-        }
-
-        .status {
-            font-size: 14px;
-            color: #cbd5e1;
-        }
-
-        .status span {
-            color: #a855f7;
-            font-weight: 600;
-        }
-
-        .quality-selector {
-            padding: 8px 12px;
-            border-radius: 6px;
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            font-family: 'Inter', sans-serif;
-            outline: none;
-            cursor: pointer;
-        }
-
-        .quality-selector option {
-            background: #1e293b;
-            color: white;
-        }
-
-        @media (max-width: 600px) {
-            .input-group { flex-direction: column; }
-            .controls-panel { flex-direction: column; gap: 10px; align-items: flex-start;}
-        }
+        .dashboard { display: flex; justify-content: space-between; align-items: center; background: #121827; padding: 15px 20px; border-radius: 12px; margin-top: 15px; border: 1px solid #1e293b; }
+        .status-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #ef4444; margin-right: 8px; box-shadow: 0 0 8px #ef4444; }
+        .status-dot.active { background: #22c55e; box-shadow: 0 0 8px #22c55e; }
+        .status-dot.loading { background: #eab308; box-shadow: 0 0 8px #eab308; }
+        
+        .quality-select { background: #0f172a; color: #fff; border: 1px solid #1e293b; padding: 8px 12px; border-radius: 6px; outline: none; cursor: pointer; font-family: 'Inter', sans-serif; font-weight: 600;}
+        
+        #error-log { margin-top: 15px; color: #ef4444; font-size: 13px; text-align: center; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="header">
-            <h2>Universal HLS Player</h2>
-        </div>
-
-        <!-- Input Area -->
-        <div class="input-group">
-            <input type="text" id="streamUrl" placeholder="Paste your .m3u8 link here...">
-            <button id="playBtn">Play Stream</button>
-        </div>
-
-        <!-- Video Player -->
-        <div class="video-wrapper">
-            <video id="videoPlayer" controls playsinline></video>
-        </div>
-
-        <!-- Control Panel (Quality & Status) -->
-        <div class="controls-panel">
-            <div class="status" id="statusText">Status: <span>Waiting for URL...</span></div>
-            <div>
-                <label for="qualitySelect" style="font-size: 14px; margin-right: 8px;">Quality:</label>
-                <select id="qualitySelect" class="quality-selector" disabled>
-                    <option value="-1">Auto</option>
-                </select>
-            </div>
-        </div>
+<div class="player-container">
+    <div class="header">
+        <h2>Live <span>Player</span> PRO</h2>
     </div>
 
-    <script>
-        const video = document.getElementById('videoPlayer');
-        const playBtn = document.getElementById('playBtn');
-        const urlInput = document.getElementById('streamUrl');
-        const qualitySelect = document.getElementById('qualitySelect');
-        const statusText = document.getElementById('statusText');
-        
-        let hlsInstance = null;
+    <div class="input-bar">
+        <input type="text" id="streamUrl" placeholder="Paste Fancode .m3u8 URL here...">
+        <button id="playBtn">Play Stream</button>
+    </div>
 
-        function updateStatus(message, isError = false) {
-            statusText.innerHTML = `Status: <span style="color: ${isError ? '#ef4444' : '#a855f7'}">${message}</span>`;
+    <div class="video-wrapper">
+        <!-- referrerpolicy="no-referrer" is strictly required here to bypass token blocks -->
+        <video id="videoPlayer" controls playsinline referrerpolicy="no-referrer"></video>
+    </div>
+
+    <div class="dashboard">
+        <div>
+            <span id="statusDot" class="status-dot"></span>
+            <span id="statusText" style="font-size: 14px; color: #cbd5e1;">Waiting for stream</span>
+        </div>
+        <div>
+            <label style="font-size: 14px; margin-right: 10px; color: #94a3b8;">Quality:</label>
+            <select id="qualityMenu" class="quality-select" disabled>
+                <option value="-1">Auto</option>
+            </select>
+        </div>
+    </div>
+    
+    <div id="error-log"></div>
+</div>
+
+<script>
+    const video = document.getElementById('videoPlayer');
+    const playBtn = document.getElementById('playBtn');
+    const urlInput = document.getElementById('streamUrl');
+    const qualityMenu = document.getElementById('qualityMenu');
+    const statusDot = document.getElementById('statusDot');
+    const statusText = document.getElementById('statusText');
+    const errorLog = document.getElementById('error-log');
+    
+    let hls = null;
+
+    function setStatus(state, message, errorMsg = "") {
+        statusText.innerText = message;
+        statusDot.className = 'status-dot ' + state;
+        errorLog.innerText = errorMsg;
+    }
+
+    function initPlayer(url) {
+        if (hls) {
+            hls.destroy();
+            qualityMenu.innerHTML = '<option value="-1">Auto</option>';
+            qualityMenu.disabled = true;
         }
 
-        function loadStream(url) {
-            // Destroy existing HLS instance if a new link is loaded
-            if (hlsInstance) {
-                hlsInstance.destroy();
+        setStatus('loading', 'Connecting to Akamai Edge Server...');
+
+        // Exact professional HLS config for live sports & bypassing preflights
+        const hlsConfig = {
+            autoStartLoad: true,
+            lowLatencyMode: true,
+            maxBufferLength: 30,
+            maxMaxBufferLength: 600,
+            xhrSetup: function(xhr, url) {
+                // Forces the browser to treat this as a simple request
+                // preventing OPTIONS preflight requests which trigger CORS blocks
+                xhr.withCredentials = false; 
             }
-            
-            // Reset Quality Menu
-            qualitySelect.innerHTML = '<option value="-1">Auto</option>';
-            qualitySelect.disabled = true;
+        };
 
-            // Check if browser supports HLS.js
-            if (Hls.isSupported()) {
-                hlsInstance = new Hls({
-                    maxMaxBufferLength: 30, // Prevents memory leak on long streams
+        if (Hls.isSupported()) {
+            hls = new Hls(hlsConfig);
+            hls.loadSource(url);
+            hls.attachMedia(video);
+
+            hls.on(Hls.Events.MANIFEST_PARSED, function(event, data) {
+                setStatus('active', 'Stream Connected & Playing');
+                
+                // Build Quality Menu
+                qualityMenu.disabled = false;
+                data.levels.forEach((level, index) => {
+                    const opt = document.createElement('option');
+                    opt.value = index;
+                    opt.text = level.height ? `${level.height}p` : `${Math.round(level.bitrate / 1000)} kbps`;
+                    qualityMenu.appendChild(opt);
                 });
 
-                hlsInstance.loadSource(url);
-                hlsInstance.attachMedia(video);
+                video.play().catch(() => setStatus('loading', 'Click the video to start playback'));
+            });
 
-                // When manifest is loaded, fetch qualities
-                hlsInstance.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
-                    updateStatus("Stream Loaded. Playing...");
-                    qualitySelect.disabled = false;
-                    
-                    // Populate Quality Dropdown
-                    data.levels.forEach((level, index) => {
-                        const option = document.createElement('option');
-                        option.value = index;
-                        // Some streams don't define height, fallback to bitrate
-                        option.text = level.height ? `${level.height}p` : `${Math.round(level.bitrate / 1000)} kbps`;
-                        qualitySelect.appendChild(option);
-                    });
-
-                    video.play().catch(() => updateStatus("Autoplay prevented by browser. Click Play.", true));
-                });
-
-                // Error Handling
-                hlsInstance.on(Hls.Events.ERROR, function (event, data) {
-                    if (data.fatal) {
-                        switch (data.type) {
-                            case Hls.ErrorTypes.NETWORK_ERROR:
-                                updateStatus("Network Error. (URL might be blocked by CORS)", true);
-                                break;
-                            case Hls.ErrorTypes.MEDIA_ERROR:
-                                updateStatus("Media Error. Trying to recover...", true);
-                                hlsInstance.recoverMediaError();
-                                break;
-                            default:
-                                updateStatus("Unrecoverable Error.", true);
-                                hlsInstance.destroy();
-                                break;
-                        }
+            hls.on(Hls.Events.ERROR, function(event, data) {
+                if (data.fatal) {
+                    switch (data.type) {
+                        case Hls.ErrorTypes.NETWORK_ERROR:
+                            console.error("Fatal network error", data);
+                            setStatus('', 'Network Blocked', 'CORS Error: You are running this file via file:/// protocol. Please run it via a local web server (http://localhost).');
+                            hls.destroy();
+                            break;
+                        case Hls.ErrorTypes.MEDIA_ERROR:
+                            console.warn("Fatal media error, recovering...");
+                            setStatus('loading', 'Recovering stream data...');
+                            hls.recoverMediaError();
+                            break;
+                        default:
+                            setStatus('', 'Fatal Error', 'Stream token may be expired.');
+                            hls.destroy();
+                            break;
                     }
-                });
+                }
+            });
 
-            } 
-            // Fallback for Safari (Mac/iOS natively supports HLS)
-            else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                video.src = url;
-                video.addEventListener('loadedmetadata', function () {
-                    updateStatus("Playing (Native HLS)...");
-                    video.play();
-                });
-                video.addEventListener('error', function() {
-                    updateStatus("Failed to load stream.", true);
-                })
-            } else {
-                updateStatus("Your browser does not support HLS playback.", true);
-            }
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            // Safari Fallback
+            video.src = url;
+            video.addEventListener('loadedmetadata', function() {
+                setStatus('active', 'Playing (Native Safari)');
+                video.play();
+            });
+            video.addEventListener('error', function() {
+                setStatus('', 'Connection Failed', 'The token might be expired or blocked.');
+            });
         }
+    }
 
-        // Button Click Event
-        playBtn.addEventListener('click', () => {
-            const url = urlInput.value.trim();
-            if (url) {
-                updateStatus("Connecting...");
-                loadStream(url);
-            } else {
-                alert("Please paste a valid .m3u8 URL");
-            }
-        });
+    playBtn.addEventListener('click', () => {
+        const url = urlInput.value.trim();
+        if (url) initPlayer(url);
+    });
 
-        // Quality Selection Event
-        qualitySelect.addEventListener('change', (e) => {
-            if (hlsInstance) {
-                hlsInstance.currentLevel = parseInt(e.target.value);
-            }
-        });
-    </script>
+    qualityMenu.addEventListener('change', (e) => {
+        if (hls) hls.currentLevel = parseInt(e.target.value);
+    });
+
+</script>
 </body>
 </html>
